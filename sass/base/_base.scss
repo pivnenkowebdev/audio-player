@@ -1,0 +1,33 @@
+body{
+   background-repeat: no-repeat;
+   background-size: cover;
+   backdrop-filter: blur(10px);
+   background-position: center;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top: 2px solid #7c7979;
+   background-color: rgba(255, 255, 255, 0.219);
+
+   .link img{
+      display: inline-block;
+      height: 100px;
+      transition: opacity 0.2s;
+
+      &:hover{
+         opacity: 0.5;
+      }
+   }
+
+   span{
+      font-size: 30px;
+      font-weight: 600;
+   }
+
+}

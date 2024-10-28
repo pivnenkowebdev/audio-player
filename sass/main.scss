@@ -1,0 +1,17 @@
+// base
+
+@import './base/vars.scss';
+@import './base/reset.scss';
+@import './base/base.scss';
+
+// blocks
+
+@import './blocks/buttons';
+@import './blocks/progress';
+@import './blocks/timeline';
+@import './blocks/volume';
+
+// sections
+
+@import './sections/player';
+

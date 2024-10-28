@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>EpicAudio</title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+      <!-- styles -->
+      <link rel="stylesheet" href="./css/main.css">
+
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/">
+      <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon//favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon//favicon-16x16.png">
+   </head>
+   <body style="background-image: url(./src/img/labels/phut.jpg);">
+
+      <section class="player">
+            <audio id="audio" src="./src/music/Phut Hon.mp3"></audio>
+
+            <!-- label for album -->
+            <div class="player__preview">
+               <div class="player__label">
+                  <img src="./src/img/labels/phut.jpg" alt="label" id="label">
+               </div>
+               <div class="player__info">
+                  <h2 class="author" id="author">Phao</h2>
+                  <h3 class="name-song" id="nameSong">Phut Hon</h3>
+               </div>
+            </div>
+
+            <div class="player__controll">
+               <!-- timeline controll -->
+               <div class="slider timeline">
+                  <div class="timeline__time">
+                     <div>
+                        <span class="timeline__time">
+                           <span id="minActual">00</span>
+                           :
+                           <span id="secActual">00</span>
+                        </span>
+                     </div>
+                     <span class="timeline__fulltime">
+                        <span id="fullMin">00</span>
+                        :
+                        <span id="fullSec">00</span></span>
+                  </div>
+                  <div class="status">
+                     <input class="real-range" type="range" min="0" max="100" value="0" id="timeline">
+                  </div>
+               </div>
+
+               <!-- volume -->
+               <div class="slider volume">
+                  <span class="volume__btn" id="volumeBtn">
+                     <img src="./src/img/icons/sound-50.svg" alt="icon" id="iconVolume">
+                  </span>
+                  <div class="status">
+                     <input class="real-range" type="range" min="0" max="100" value="50" id="volume">
+                  </div>
+               </div>
+
+               <!-- buttons controll -->
+               <div class="buttons">
+                     <button class="btn-controll btn-controll--stack" id="btnPrev">
+                       <img src="./src/img/icons/arrow.svg" alt="icon">
+                     </button>
+      
+                     <button class="btn-controll" id="btnPlay">
+                       <img src="./src/img/icons/play.svg" alt="icon">
+                     </button>
+      
+                     <button class="btn-controll btn-controll--stack" id="btnNext">
+                       <img src="./src/img/icons/arrow.svg" alt="icon">
+                     </button>
+               </div>
+
+            </div>
+         </section>
+         <footer class="footer">
+               <a class="link" href="https://rs.school/js-stage0/" target="_blank">
+                  <img src="./src/img/icons/rs-school.svg" alt="rs">
+               </a>
+               <span>2023</span>
+               <a class="link" href="https://github.com/pivnenkowebdev" target="_blank">
+                  <img src="./src/img/icons/github.svg" alt="github">
+               </a>
+         </footer>
+
+      <script src="./js/main.js"></script>
+   </body>
+</html>
